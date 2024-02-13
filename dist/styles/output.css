@@ -651,6 +651,10 @@ video {
   scroll-snap-align: start;
 }
 
+.snap-end {
+  scroll-snap-align: end;
+}
+
 .scroll-p-7 {
   scroll-padding: 1.75rem;
 }
@@ -805,12 +809,6 @@ video {
 
 .transition-all {
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-transform {
-  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
