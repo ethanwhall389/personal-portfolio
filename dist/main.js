@@ -1,0 +1,1 @@
+(()=>{const e=document.body,o=document.createElement("div");o.style.width="20px",o.style.height="20px",o.style.backgroundColor="#808080",o.style.position="absolute",o.style.zIndex="100",e.appendChild(o),e.addEventListener("mousemove",(e=>{o.style.transform=`translate(${e.clientX}px, ${e.clientY}px)`,console.log(e.clientX),console.log(e.clientY)})),console.log("helloooo")})();
