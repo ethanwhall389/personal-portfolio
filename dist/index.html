@@ -17,7 +17,7 @@
 </head>
 <body class="text-white min-h-screen bg-[url('../images/background.jpg')] bg-fixed bg-center bg-cover bg-opacity-10 cursor-none overflow-hidden">
     
-    <div id="cursor" class="w-4 h-4 bg-blue-400 absolute z-50 pointer-events-none rounded-full hidden transition-all duration-75"></div>
+    <div id="cursor" class="w-4 h-4 bg-blue-400 absolute z-50 pointer-events-none rounded-full hidden"></div>
 
     <div class=" h-screen px-10 overflow-hidden overflow-y-scroll snap-y snap-mandatory scroll-smooth scroll-p-7 scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-black">
 
@@ -45,12 +45,12 @@
     
             <section id="home" class="snap-start min-h-screen flex flex-col items-center justify-center">
                 <div class="flex flex-col items-center -mt-5">
-                    <h1 class="text-5xl">Hello!</h1>
-                    <h2 class="my-3">My Name is Ethan Hall and I am a web developer</h2>
+                    <h1 class="text-6xl">Hello!</h1>
+                    <h2 class="my-3 text-lg">My Name is <a href="#about" class="hover:text-blue-400 transition-all">Ethan Hall</a> and I am a software engineer</h2>
                 </div>
             </section>
     
-            <section id="about" class="snap-start min-h-screen flex-col items-end pt-24">
+            <section id="about" class="snap-start min-h-screen max-w-5xl mx-auto flex-col items-end pt-24">
                 <h2 class="text-center text-4xl pb-4">About me</h2>
                 <div class="mt-10 flex gap-8">
                     <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti error praesentium magnam. Temporibus incidunt, necessitatibus dolorem illum est nobis veritatis, harum quia dolore culpa repellat nesciunt eos adipisci nisi cupiditate!</p>
