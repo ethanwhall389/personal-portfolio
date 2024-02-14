@@ -15,12 +15,24 @@ module.exports = {
         underline: {
           '0%': {width: '0%'},
           '100%': {width: '100%'},
-        }
+        },
+
+        riseup: {
+          '0%': {opacity: '0', top: '30px'},
+          '100%': {opacity: '1', top: '0px'},
+        },
+
+        risedown: {
+          '0%': {opacity: '1', top: '0px'},
+          '100%': {opacity: '0', top: '30px'},
+        },
       },
 
       animation: {
         reversebounce: 'reversebounce 1s ease-in-out',
         underline: 'underline 1s ease-in-out forwards',
+        riseup: 'riseup 0.5s ease-in-out forwards',
+        risedown: 'risedown 0.5s ease-in-out forwards',
       },
 
       animationDelay: {

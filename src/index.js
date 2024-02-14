@@ -44,3 +44,25 @@ profileLink.addEventListener('mouseout', () => {
     profilePhoto.classList.add('opacity-0');
     profilePhoto.style.transform = 'translate(0px, 10px)';
 })
+
+
+// Hover Skills
+const skills = document.querySelectorAll('#skill-logo');
+
+    skills.forEach(skill => {
+        skill.addEventListener('mouseover', () => {
+            console.log('mouseover');
+            const label = skill.nextElementSibling;
+            label.classList.remove('animate-risedown');
+            label.classList.add('animate-riseup');
+        })
+
+        skill.addEventListener('mouseout', () => {
+            const label = skill.nextElementSibling;
+            setTimeout( () => {
+                label.classList.remove('animate-riseup');
+                label.classList.add('animate-risedown');
+            }, 200)
+        })
+
+    })
