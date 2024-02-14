@@ -46,12 +46,16 @@
             <section id="home" class="snap-always snap-start scroll-snap max-w-2xl mx-auto min-h-screen flex flex-col justify-center items-center">
                 <div class="flex flex-col items-center justify-center mb-44">
                     <img src="./images/headshot-bw.jpg" id="profile-photo" alt="Ethan Hall headshot" class="opacity-0 max-w-28 rounded-full transition-all duration-500">
-                    <h1 class="my-3 text-3xl text-center">My Name is <a href="#about" id="profile-image-link" class="hover:text-blue-400 transition-all">Ethan Hall.</a> I'm a software engineer.</h1>
+                    <h1 class="my-3 text-3xl text-center">My Name is <a href="#about" id="profile-image-link" class="relative hover:text-blue-400 transition-all before:content-[''] before:absolute before:bg-blue-500 before:h-[3px] before:w-[0%] before:bottom-0 before:animate-underline before:animate-delay-1000">Ethan Hall.</a> I'm a software engineer.</h1>
                     <p>I build applications using cutting-edge technology.</p>
                 </div>
                 
-                <p class="mb-10 animate-in spin-in-0 delay-100">Check out the ones I use</p>
-                <a href="#about"><img src="images/icons/arrow-down.svg" class="animate-in fade-in w-10"></img></a>
+                <div class="animate-fade-up animate-delay-3000 flex flex-col items-center">
+                    <p class="mb-10">Check out the technologies I use</p>
+                    <div id="arrow-cont" class="hover:scale-110 transition-all duration-700">
+                        <a href="#about"><img src="images/icons/arrow-down.svg" class="w-10 animate-reversebounce animate-thrice animate-delay-2900"></img></a>
+                    </div>
+                </div>
             </section>
     
             <section id="about" class="snap-always snap-start min-h-screen max-w-5xl mx-auto flex-col items-end pt-24">

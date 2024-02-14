@@ -6,27 +6,32 @@ module.exports = {
       sans: ['Roboto', 'sans-serif'],
     },
     extend: {
+      keyframes: {
+        reversebounce: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-25%)' },
+        },
+
+        underline: {
+          '0%': {width: '0%'},
+          '100%': {width: '100%'},
+        }
+      },
 
       animation: {
-        fadein: 'fadein 1s ease-in-out',
+        reversebounce: 'reversebounce 1s ease-in-out',
+        underline: 'underline 1s ease-in-out forwards',
       },
 
-      scale: {
-        '200': '2',
-        '300': '3',
+      animationDelay: {
+        2900: '2.9s',
+        3000: '3s',
       },
-
-      keyframes: {
-        fadein: {
-          '0%': {opacity: 0},
-          '100%': {opacity: 1}
-        }
-      }
 
     },
   },
   plugins: [
-    require('tailwindcss-animate'),
+    require('tailwindcss-animated'),
     require('tailwind-scrollbar'),
   ],
 }
