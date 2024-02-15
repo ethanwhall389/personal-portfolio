@@ -579,18 +579,6 @@ video {
   top: 0px;
 }
 
-.top-\[30px\] {
-  top: 30px;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.top-24 {
-  top: 6rem;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -617,6 +605,10 @@ video {
   margin-bottom: 4rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -627,6 +619,14 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .block {
@@ -697,12 +697,12 @@ video {
   width: 100%;
 }
 
-.max-w-28 {
-  max-width: 7rem;
-}
-
 .max-w-2xl {
   max-width: 42rem;
+}
+
+.max-w-36 {
+  max-width: 9rem;
 }
 
 .max-w-5xl {
@@ -751,38 +751,6 @@ video {
   animation: reversebounce 1s ease-in-out;
 }
 
-@keyframes risedown {
-  0% {
-    opacity: 1;
-    top: 0px;
-  }
-
-  100% {
-    opacity: 0;
-    top: 30px;
-  }
-}
-
-.animate-risedown {
-  animation: risedown 0.5s ease-in-out forwards;
-}
-
-@keyframes riseup {
-  0% {
-    opacity: 0;
-    top: 30px;
-  }
-
-  100% {
-    opacity: 1;
-    top: 0px;
-  }
-}
-
-.animate-riseup {
-  animation: riseup 0.5s ease-in-out forwards;
-}
-
 .cursor-none {
   cursor: none;
 }
@@ -811,6 +779,10 @@ video {
   scroll-padding: 1.75rem;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -833,6 +805,10 @@ video {
 
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+.gap-11 {
+  gap: 2.75rem;
 }
 
 .gap-2 {
@@ -960,6 +936,11 @@ video {
   padding-right: 0.75rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -992,9 +973,9 @@ video {
   text-align: center;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-4xl {
@@ -1007,6 +988,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1014,10 +1000,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.opacity-0 {
-  opacity: 0;
 }
 
 .opacity-100 {
@@ -1124,6 +1106,11 @@ video {
   --scrollbar-thumb: #1e293b !important;
 }
 
+.-translate-y-7 {
+  --tw-translate-y: -1.75rem;
+  translate: var(--tw-translate-x) var(--tw-translate-y) var(--tw-translate-z);
+}
+
 .transform {
   --webkit-transform: skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y));
   transform: skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y));
@@ -1182,8 +1169,13 @@ video {
   animation-delay: 1000ms;
 }
 
-.peer\/headshot:hover ~ .peer-hover\/headshot\:opacity-100 {
+.group:hover .group-hover\:opacity-100 {
   opacity: 1;
+}
+
+.group:hover .group-hover\:-translate-y-5 {
+  --tw-translate-y: -1.25rem;
+  translate: var(--tw-translate-x) var(--tw-translate-y) var(--tw-translate-z);
 }
 
 .hover\:border-blue-400:hover {
@@ -1214,15 +1206,78 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-44 {
+    margin-bottom: 11rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:justify-between {
     justify-content: space-between;
   }
 
-  .md\:opacity-0 {
+  .md\:gap-y-11 {
+    row-gap: 2.75rem;
+  }
+
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:top-\[30px\] {
+    top: 30px;
+  }
+
+  .lg\:opacity-0 {
     opacity: 0;
+  }
+
+  .lg\:translate-y-10 {
+    --tw-translate-y: 2.5rem;
+    translate: var(--tw-translate-x) var(--tw-translate-y) var(--tw-translate-z);
+  }
+
+  @keyframes riseup {
+    0% {
+      opacity: 0;
+      top: 30px;
+    }
+
+    50% {
+      opacity: 1;
+      top: 0px;
+    }
+
+    100% {
+      opacity: 0;
+      top: 30px;
+    }
+  }
+
+  .peer:hover ~ .lg\:peer-hover\:animate-riseup {
+    animation: riseup 1.2s cubic-bezier(.53,0,.5,.99) forwards;
   }
 }

@@ -22,7 +22,8 @@ module.exports = {
 
         riseup: {
           '0%': {opacity: '0', top: '30px'},
-          '100%': {opacity: '1', top: '0px'},
+          '50%': {opacity: '1', top: '0px'},
+          '100%': {opacity: '0', top: '30px'},
         },
 
         risedown: {
@@ -34,7 +35,7 @@ module.exports = {
       animation: {
         reversebounce: 'reversebounce 1s ease-in-out',
         underline: 'underline 1s ease-in-out forwards',
-        riseup: 'riseup 0.5s ease-in-out forwards',
+        riseup: 'riseup 1.2s cubic-bezier(.53,0,.5,.99) forwards',
         risedown: 'risedown 0.5s ease-in-out forwards',
       },
 

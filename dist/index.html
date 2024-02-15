@@ -18,7 +18,7 @@
 </head>
 <body class="text-white min-h-screen bg-[url('../images/bg-darker.jpg')] bg-fixed bg-center bg-cover bg-opacity-10 cursor-none overflow-hidden">
     
-    <div id="cursor" class="w-4 h-4 bg-blue-400 absolute z-50 pointer-events-none rounded-full hidden"></div>
+    <div id="cursor" class="hidden absolute w-4 h-4 bg-blue-400 z-50 pointer-events-none rounded-full"></div>
 
     <div class="h-screen px-10 overflow-hidden overflow-y-scroll snap-y snap-mandatory scroll-smooth scroll-p-7 scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-black">
 
@@ -26,7 +26,7 @@
     
             <nav class="text-lg px-2 pt-5 pb-3 flex justify-center md:justify-between sticky top-0 z-10">
                 <div class="">
-                    <span class="font-medium hover:text-blue-400 transition-all duration-200"><a href="#home">Ethan Hall</a></span>
+                    <span class="font-medium text-sm md:text-lg hover:text-blue-400 transition-all duration-200"><a href="#home">Ethan Hall</a></span>
                 </div>
                     <ol class="hidden md:flex flex-1 justify-end gap-3 ">
                         <li class="px-3 border-2 border-transparent rounded-full hover:border-blue-400 transition-all duration-200">
@@ -44,14 +44,16 @@
                     </ol>
             </nav>
     
-            <section id="home" class="snap-always snap-start scroll-snap max-w-2xl mx-auto min-h-screen flex flex-col justify-center items-center relative">
-                <div class="flex flex-col items-center justify-center mb-44">
-                    <h1 class="peer/headshot my-3 text-3xl text-center">
-                        My Name is 
-                        <a href="#skills" id="profile-image-link" class="relative hover:text-blue-400 transition-all before:content-[''] before:absolute before:bg-blue-500 before:h-[3px] before:w-[0%] before:bottom-0 before:animate-underline before:animate-delay-1000">Ethan Hall.</a>
-                        I'm a software engineer.
-                    </h1>
-                    <img src="./images/headshot-bw.jpg" id="profile-photo" alt="Ethan Hall headshot" class="absolute top-24 opacity-100 peer-hover/headshot:opacity-100 md:opacity-0 max-w-28 rounded-full transition-all duration-500">
+            <section id="home" class="snap-always snap-start scroll-snap max-w-2xl mt-20 mx-auto min-h-screen flex flex-col justify-center items-center relative">
+                <div class="flex flex-col items-center justify-center mb-20 md:mb-44">
+                    <div class="peer/headshot group mt-16 md:mt-0 my-3 flex flex-col items-center w-[100%]">
+                        <img src="./images/headshot-bw.jpg" id="profile-photo" alt="Ethan Hall headshot" class="opacity-100 -translate-y-7 group-hover:opacity-100 group-hover:-translate-y-5 lg:opacity-0 lg:translate-y-10 max-w-36 rounded-full transition-all duration-500">
+                        <h1 class="text-2xl md:text-3xl text-center ">
+                            My Name is
+                            <a href="#skills" id="profile-image-link" class="relative hover:text-blue-400 transition-all before:content-[''] before:absolute before:bg-blue-500 before:h-[3px] before:w-[0%] before:bottom-0 before:animate-underline before:animate-delay-1000">Ethan Hall.</a>
+                            I'm a software engineer.
+                        </h1>
+                    </div>
                     <p>I build applications using cutting-edge technology.</p>
                 </div>
                 
@@ -65,38 +67,38 @@
     
             <section id="skills" class="mx-auto snap-always snap-start min-h-screen max-w-5xl flex flex-col items-center justify-center pt-24">
                 <h2 class="text-center text-4xl pb-4 mb-16">Skills</h2>
-                <div class="w-[100%] mb-44 px-24 grid grid-cols-3 gap-y-11">
+                <div class="w-[100%] mb-44 px-6 md:px-24 grid grid-cols-2 gap-11 md:grid-cols-3 md:gap-y-11">
                     <div class="pt-7 flex flex-col justify-center items-center relative">
-                        <img id="skill-logo" src="images/skills-logos/logo-javascript.svg" alt="javascript logo" class="w-20 z-10">
-                        <span class="absolute top-[30px] opacity-0">Javascript</span>
+                        <img id="skill-logo" src="images/skills-logos/logo-javascript.svg" alt="javascript logo" class="w-20 z-10 peer">
+                        <span class="absolute top-0 lg:top-[30px] lg:opacity-0 lg:peer-hover:animate-riseup">Javascript</span>
                     </div>
                     <div class="pt-7 flex flex-col justify-center items-center relative"">
-                        <img id="skill-logo" src="images/skills-logos/typescript.svg" alt="typescript logo" class="w-20 z-10">
-                        <span class="absolute top-[30px] opacity-0">Typescript</span>
+                        <img id="skill-logo" src="images/skills-logos/typescript.svg" alt="typescript logo" class="w-20 z-10 peer">
+                        <span class="absolute top-0 lg:top-[30px] lg:opacity-0 lg:peer-hover:animate-riseup">Typescript</span>
                     </div>
                     <div class="pt-7 flex flex-col justify-center items-center relative">
-                        <img id="skill-logo" src="images/skills-logos/react-2.svg" alt="React logo" class="w-20 z-10">
-                        <span class="absolute top-[30px] opacity-0">React</span>
+                        <img id="skill-logo" src="images/skills-logos/react-2.svg" alt="React logo" class="w-20 z-10 peer">
+                        <span class="absolute top-0 lg:top-[30px] lg:opacity-0 lg:peer-hover:animate-riseup">React</span>
                     </div>
                     <div class="pt-7 flex flex-col justify-center items-center relative">
-                        <img id="skill-logo" src="images/skills-logos/html-1.svg" alt="html 5 logo" class="w-20 z-10">
-                        <span class="absolute top-[30px] opacity-0">HTML</span>
+                        <img id="skill-logo" src="images/skills-logos/html-1.svg" alt="html 5 logo" class="w-20 z-10 peer">
+                        <span class="absolute top-0 lg:top-[30px] lg:opacity-0 lg:peer-hover:animate-riseup">HTML</span>
                     </div>
                     <div class="pt-7 flex flex-col justify-center items-center relative">
-                        <img id="skill-logo" src="images/skills-logos/css-3.svg" alt="css logo" class="w-20 z-10">
-                        <span class="absolute top-[30px] opacity-0">CSS</span>
+                        <img id="skill-logo" src="images/skills-logos/css-3.svg" alt="css logo" class="w-20 z-10 peer">
+                        <span class="absolute top-0 lg:top-[30px] lg:opacity-0 lg:peer-hover:animate-riseup">CSS</span>
                     </div>
                     <div class="pt-7 flex flex-col justify-center items-center relative">
-                        <img id="skill-logo" src="images/skills-logos/tailwind-css-2.svg" alt="tailwind css logo" class="w-20 z-10">
-                        <span class="absolute top-[30px] opacity-0">TailwindCss</span>
+                        <img id="skill-logo" src="images/skills-logos/tailwind-css-2.svg" alt="tailwind css logo" class="w-20 z-10 peer">
+                        <span class="absolute top-0 lg:top-[30px] lg:opacity-0 lg:peer-hover:animate-riseup">TailwindCss</span>
                     </div>
                     <div class="pt-7 flex flex-col justify-center items-center relative">
-                        <img id="skill-logo" src="images/skills-logos/webpack-icon.svg" alt="git logo" class="w-20 z-10">
-                        <span class="absolute top-[30px] opacity-0">Webpack</span>
+                        <img id="skill-logo" src="images/skills-logos/webpack-icon.svg" alt="git logo" class="w-20 z-10 peer">
+                        <span class="absolute top-0 lg:top-[30px] lg:opacity-0 lg:peer-hover:animate-riseup">Webpack</span>
                     </div>
                     <div class="pt-7 flex flex-col justify-center items-center relative">
-                        <img id="skill-logo" src="images/skills-logos/git-icon.svg" alt="git logo" class="w-20 z-10">
-                        <span class="absolute top-[30px] opacity-0">Git</span>
+                        <img id="skill-logo" src="images/skills-logos/git-icon.svg" alt="git logo" class="w-20 z-10 peer">
+                        <span class="absolute top-0 lg:top-[30px] lg:opacity-0 lg:peer-hover:animate-riseup">Git</span>
                     </div>
                 </div>
             </section>

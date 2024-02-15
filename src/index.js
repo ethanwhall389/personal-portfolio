@@ -47,22 +47,22 @@ clickables.forEach(item => {
 
 
 // Hover Skills
-const skills = document.querySelectorAll('#skill-logo');
+// const skills = document.querySelectorAll('#skill-logo');
 
-    skills.forEach(skill => {
-        skill.addEventListener('mouseover', () => {
-            console.log('mouseover');
-            const label = skill.nextElementSibling;
-            label.classList.remove('animate-risedown');
-            label.classList.add('animate-riseup');
-        })
+//     skills.forEach(skill => {
+//         skill.addEventListener('mouseover', () => {
+//             console.log('mouseover');
+//             const label = skill.nextElementSibling;
+//             label.classList.remove('animate-risedown');
+//             label.classList.add('animate-riseup');
+//         })
 
-        skill.addEventListener('mouseout', () => {
-            const label = skill.nextElementSibling;
-            setTimeout( () => {
-                label.classList.remove('animate-riseup');
-                label.classList.add('animate-risedown');
-            }, 200)
-        })
+//         skill.addEventListener('mouseout', () => {
+//             const label = skill.nextElementSibling;
+//             setTimeout( () => {
+//                 label.classList.remove('animate-riseup');
+//                 label.classList.add('animate-risedown');
+//             }, 200)
+//         })
 
-    })
+//     })
