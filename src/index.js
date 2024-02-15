@@ -30,20 +30,20 @@ clickables.forEach(item => {
 
 // Hover profile photo
 
-const profileLink = document.querySelector('#profile-image-link');
-const profilePhoto = document.querySelector('#profile-photo');
+// const profileLink = document.querySelector('#profile-image-link');
+// const profilePhoto = document.querySelector('#profile-photo');
 
-profileLink.addEventListener('mouseover', () => {
-    profilePhoto.classList.remove('opacity-0');
-    profilePhoto.classList.add('opacity-100');
-    profilePhoto.style.transform = 'translate(0px, -10px)';
-})
+// profileLink.addEventListener('mouseover', () => {
+//     profilePhoto.classList.remove('opacity-0');
+//     profilePhoto.classList.add('opacity-100');
+//     profilePhoto.style.transform = 'translate(0px, -10px)';
+// })
 
-profileLink.addEventListener('mouseout', () => {
-    profilePhoto.classList.remove('opacity-100');
-    profilePhoto.classList.add('opacity-0');
-    profilePhoto.style.transform = 'translate(0px, 10px)';
-})
+// profileLink.addEventListener('mouseout', () => {
+//     profilePhoto.classList.remove('opacity-100');
+//     profilePhoto.classList.add('opacity-0');
+//     profilePhoto.style.transform = 'translate(0px, 10px)';
+// })
 
 
 // Hover Skills
