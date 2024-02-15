@@ -902,8 +902,8 @@ video {
   --tw-bg-opacity: 0.1;
 }
 
-.bg-\[url\(\'\.\.\/images\/background\.jpg\'\)\] {
-  background-image: url('../images/background.jpg');
+.bg-\[url\(\'\.\.\/images\/bg-darker\.jpg\'\)\] {
+  background-image: url('../images/bg-darker.jpg');
 }
 
 .bg-gradient-to-tr {
