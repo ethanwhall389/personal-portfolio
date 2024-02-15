@@ -609,20 +609,16 @@ video {
   margin-bottom: 4rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-44 {
   margin-bottom: 11rem;
 }
 
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
 }
 
 .block {
@@ -641,12 +637,12 @@ video {
   display: none;
 }
 
-.h-36 {
-  height: 9rem;
-}
-
 .h-4 {
   height: 1rem;
+}
+
+.h-44 {
+  height: 11rem;
 }
 
 .h-screen {
@@ -681,20 +677,16 @@ video {
   width: 1.25rem;
 }
 
-.w-\[100\%\] {
-  width: 100%;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
-.w-8 {
-  width: 2rem;
+.w-52 {
+  width: 13rem;
 }
 
 .w-7 {
   width: 1.75rem;
+}
+
+.w-\[100\%\] {
+  width: 100%;
 }
 
 .max-w-28 {
@@ -819,14 +811,6 @@ video {
   flex-direction: column;
 }
 
-.items-start {
-  align-items: flex-start;
-}
-
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
 }
@@ -841,6 +825,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-2 {
@@ -892,21 +880,12 @@ video {
   border-width: 2px;
 }
 
-.border-b {
-  border-bottom-width: 1px;
-}
-
 .border-b-2 {
   border-bottom-width: 2px;
 }
 
 .border-transparent {
   border-color: transparent;
-}
-
-.border-b-blue-500 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(59 130 246 / var(--tw-border-opacity));
 }
 
 .border-b-blue-400 {
@@ -975,10 +954,6 @@ video {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
 }
 
 .pb-3 {
@@ -1213,16 +1188,6 @@ video {
   color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
-.hover\:text-blue-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-
-.hover\:rotate-6:hover {
-  --tw-rotate-z: 6deg;
-  rotate: var(--tw-rotate-z);
-}
-
 .hover\:rotate-3:hover {
   --tw-rotate-z: 3deg;
   rotate: var(--tw-rotate-z);
@@ -1231,18 +1196,6 @@ video {
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
-  scale: var(--tw-scale-x) var(--tw-scale-y) var(--tw-scale-z);
-}
-
-.hover\:scale-75:hover {
-  --tw-scale-x: 0.75;
-  --tw-scale-y: 0.75;
-  scale: var(--tw-scale-x) var(--tw-scale-y) var(--tw-scale-z);
-}
-
-.hover\:scale-95:hover {
-  --tw-scale-x: 0.95;
-  --tw-scale-y: 0.95;
   scale: var(--tw-scale-x) var(--tw-scale-y) var(--tw-scale-z);
 }
 
