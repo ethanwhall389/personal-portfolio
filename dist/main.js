@@ -1,1 +1,0 @@
-(()=>{const t=["https://ethanwhall389.github.io/drizzle-weather/","https://ethanwhall389.github.io/battleship/","https://ethanwhall389.github.io/iss-tracker/"],e=document.querySelectorAll(".project");for(let h=0;h<e.length;h++)e[h].addEventListener("click",(()=>{window.open(t[h],"_blank")}))})();
