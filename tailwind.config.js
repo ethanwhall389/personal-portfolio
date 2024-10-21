@@ -7,6 +7,10 @@ module.exports = {
     },
     extend: {
 
+      spacing: {
+        '128': '32rem',
+      },
+
       fontSize: {
         '3xl': '1.875rem', // This is the default size for text-3xl
         '4xl': '2.5rem', // This is the default size for text-3xl
