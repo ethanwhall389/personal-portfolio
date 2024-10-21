@@ -16,7 +16,7 @@
 </head>
 
 <body
-  class="text-white min-h-screen bg-[url('../images/bg-darker.jpg')] bg-fixed bg-center bg-cover bg-opacity-10 overflow-hidden">
+  class="text-white text-lg min-h-screen bg-[url('../images/bg-darker.jpg')] bg-fixed bg-center bg-cover bg-opacity-10 overflow-hidden">
   <!-- <div id="cursor" class="hidden absolute w-4 h-4 bg-blue-400 z-50 pointer-events-none rounded-full"></div> -->
 
   <div
@@ -25,17 +25,17 @@
       <nav class="text-lg px-2 pt-5 pb-3 flex justify-center md:justify-between sticky top-0 z-10">
         <div class="">
           <span class="font-medium text-sm md:text-lg hover:text-blue-400 transition-all duration-200"><a
-              href="#home">Ethan Hall</a></span>
+              href="#home">Ethan Hall Design</a></span>
         </div>
         <ol class="hidden md:flex flex-1 justify-end gap-3">
           <li class="px-3 border-2 border-transparent rounded-full hover:border-blue-400 transition-all duration-200">
             <a href="#home">Home</a>
           </li>
           <li class="px-3 border-2 border-transparent hover:border-blue-400 rounded-full transition-all duration-200">
-            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
           </li>
           <li class="px-3 border-2 border-transparent hover:border-blue-400 rounded-full transition-all duration-200">
-            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
           </li>
           <li class="px-3 border-2 border-transparent hover:border-blue-400 rounded-full transition-all duration-200">
             <a href="#contact">Contact</a>
@@ -45,75 +45,23 @@
 
       <section id="home"
         class="snap-always snap-start scroll-snap max-w-2xl mt-20 mx-auto min-h-screen flex flex-col justify-center items-center relative">
-        <div class="flex flex-col items-center justify-center mb-20 md:mb-44">
-          <div class="peer/headshot group mt-16 md:mt-0 my-3 flex flex-col items-center w-[100%]">
-            <img src="./images/headshot-bw.jpg" id="profile-photo" alt="Ethan Hall headshot"
-              class="opacity-100 -translate-y-7 group-hover:opacity-100 group-hover:-translate-y-5 lg:opacity-0 lg:translate-y-10 max-w-36 rounded-full transition-all duration-500" />
-            <h1 class="text-2xl md:text-3xl text-center">
-              My Name is
-              <a href="#skills" id="profile-image-link"
-                class="relative hover:text-blue-400 transition-all before:content-[''] before:absolute before:bg-blue-500 before:h-[3px] before:w-[0%] before:bottom-0 before:animate-underline before:animate-delay-1000">Ethan
-                Hall.</a>
-              I'm a software engineer.
-            </h1>
-          </div>
-          <p>I build applications using cutting-edge technology.</p>
+        <div class="mb-20">
+          <h3 class="text-center text-1xl text-blue-400 mb-8">Upstate South Carolina Web Design</h3>
+          <h2 class="text-4xl text-center leading-tight mb-8">Professional Christian Website Design & Development</h2>
+          <p class="text-center">Ethan Hall Design provides websites to Churches and Christian Businesses as we seek to build Christ's kingdom throughout the world.</p>
         </div>
-
-        <div class="animate-fade-up animate-delay-3000 flex flex-col items-center">
-          <p class="mb-10">Check out the technologies I use</p>
+              <div class="animate-fade-up animate-delay-2500 flex flex-col items-center">
+          <p class="mb-10">Check out some projects I've worked on</p>
           <div id="arrow-cont" class="hover:scale-110 transition-all duration-700">
-            <a href="#skills"><img src="images/icons/arrow-down.svg" alt="arrow down icon"
+            <a href="#portfolio"><img src="images/icons/arrow-down.svg" alt="arrow down icon"
                 class="w-10 animate-reversebounce animate-thrice animate-delay-2900"></img></a>
           </div>
         </div>
       </section>
 
-      <section id="skills"
-        class="mx-auto snap-always snap-start min-h-screen max-w-5xl flex flex-col items-center justify-center pt-24">
-        <h2 class="text-center text-4xl pb-4 mb-16">Skills</h2>
-        <div class="w-[100%] mb-44 px-6 md:px-24 grid grid-cols-2 gap-11 md:grid-cols-3 md:gap-y-11">
-          <div class="pt-7 flex flex-col justify-center items-center relative">
-            <img id="skill-logo" src="images/skills-logos/react-2.svg" alt="React logo" class="w-20 z-10 peer" />
-            <span class="absolute top-0 lg:top-[30px] lg:opacity-0 lg:peer-hover:animate-riseup">React</span>
-          </div>
-          <div class="pt-7 flex flex-col justify-center items-center relative">
-            <img id="skill-logo" src="images/skills-logos/logo-javascript.svg" alt="javascript logo"
-              class="w-20 z-10 peer" />
-            <span class="absolute top-0 lg:top-[30px] lg:opacity-0 lg:peer-hover:animate-riseup">Javascript</span>
-          </div>
-
-          <div class="pt-7 flex flex-col justify-center items-center relative">
-            <img id="skill-logo" src="images/skills-logos/html-1.svg" alt="html 5 logo" class="w-20 z-10 peer" />
-            <span class="absolute top-0 lg:top-[30px] lg:opacity-0 lg:peer-hover:animate-riseup">HTML</span>
-          </div>
-          <div class="pt-7 flex flex-col justify-center items-center relative">
-            <img id="skill-logo" src="images/skills-logos/css-3.svg" alt="css logo" class="w-20 z-10 peer" />
-            <span class="absolute top-0 lg:top-[30px] lg:opacity-0 lg:peer-hover:animate-riseup">CSS</span>
-          </div>
-          <div class="pt-7 flex flex-col justify-center items-center relative">
-            <img id="skill-logo" src="images/skills-logos/tailwind-css-2.svg" alt="tailwind css logo"
-              class="w-20 z-10 peer" />
-            <span class="absolute top-0 lg:top-[30px] lg:opacity-0 lg:peer-hover:animate-riseup">TailwindCss</span>
-          </div>
-          <div class="pt-7 flex flex-col justify-center items-center relative">
-            <img id="skill-logo" src="images/skills-logos/webpack-icon.svg" alt="git logo" class="w-20 z-10 peer" />
-            <span class="absolute top-0 lg:top-[30px] lg:opacity-0 lg:peer-hover:animate-riseup">Webpack</span>
-          </div>
-          <div class="pt-7 flex flex-col justify-center items-center relative">
-            <img id="skill-logo" src="images/skills-logos/git-icon.svg" alt="git logo" class="w-20 z-10 peer" />
-            <span class="absolute top-0 lg:top-[30px] lg:opacity-0 lg:peer-hover:animate-riseup">Git</span>
-          </div>
-          <div class="pt-7 flex flex-col justify-center items-center relative">
-            <img id="skill-logo" src="images/skills-logos/ubuntu.svg" alt="git logo" class="w-20 z-10 peer" />
-            <span class="absolute top-0 lg:top-[30px] lg:opacity-0 lg:peer-hover:animate-riseup">Linux Ubuntu</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects"
+      <section id="portfolio"
         class="snap-always snap-start min-h-screen max-w-5xl mx-auto pt-16 flex flex-col items-center justify-center">
-        <h2 class="text-center text-4xl pb-4 mb-16">Projects</h2>
+        <h2 class="text-center text-4xl pb-4 mb-16">Portfolio</h2>
         <!-- <div class="min-h-screen mx-auto flex flex-1 flex-col items-center justify-center"> -->
         <div class="mx-auto mb-44">
           <div class="w-[100%] px-6 md:px-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-11 gap-x-24">
@@ -240,14 +188,59 @@
         </div>
       </section>
 
+      <section id="about"
+      class="mx-auto snap-always snap-start min-h-screen max-w-5xl flex flex-col items-center justify-center pt-24">
+      <div class="flex flex-col items-center justify-center mb-20 md:mb-44">
+        <div class="peer/headshot group mt-16 md:mt-0 my-3 flex flex-col items-center w-[100%]">
+          <img src="./images/headshot-bw.jpg" id="profile-photo" alt="Ethan Hall headshot"
+            class="opacity-100 max-w-36 rounded-full transition-all duration-500 mb-8" />
+          <h1 class="text-2xl md:text-3xl text-center mb-8">
+            <a href="#portfolio" id="profile-image-link"
+              class="relative hover:text-blue-400 transition-all before:content-[''] before:absolute before:bg-blue-500 before:h-[3px] before:w-[0%] before:bottom-0 before:animate-underline before:animate-delay-1000">Ethan
+              Hall</a>
+             Design
+          </h1>
+        </div>
+        <p class="text-left mb-8"><b>Ethan Hall Design</b> is a web design & SEO company in South Carolina that helps churches and small Christian businesses reach the world for Christ. Whether you are a pastor looking to help people find your church, or a hot dog vendor who seeks to glorify God by making the best hot dogs you can, we can help you in your mission.</p>
+        <p class="text-left mb-8">We seek to bring excellence to each client we take on, knowing that we our success depends on theirs. Ultimately, we seek to glorify God in our hard work.</p>
+        <p>Take a look at our <a href="#portfolio" class="underline text-blue-400 hover:text-blue-300">client portfolio</a> to get a sample of the kind of work we do. When you're ready, <a href="#contact" class="underline text-blue-400 hover:text-blue-300">reach out to Ethan</a> to see how Ethan Hall Design can be of service to you in your mission.</p>
+      </div>
+    </section>
+
       <section id="contact"
         class="snap-always snap-start min-h-screen max-w-5xl mx-auto pt-16 flex flex-col items-center justify-center">
         <div class="flex flex-col items-center justify-center mb-44">
-          <h1 class="text-4xl">
-            <a href="mailto:ethanwhall@icloud.com"
-              class="border-b-2 border-b-blue-400 hover:text-blue-400 transition-all">Get in touch</a>
-            with me.
-          </h1>
+          <div>
+            <p class="text-4xl mb-2 pb-2 border-b-2 border-b-blue-400">Contact Us</p>
+            <p>How can we help you?</p>
+          </div>
+          <div class="bg-white text-black text-xl font-bold p-8 m-4">
+            <form id="contact-form">
+              <ol>
+                <li class="flex flex-col mb-4">
+                  <label for="name">Your Name:</label>
+                  <input type="text" id="name" required class="border-2 p-1 border-blue-500 text-lg font-normal">
+                </li>
+                <li class="flex flex-col mb-4">
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" required class="border-2 p-1 border-blue-500 text-lg font-normal">
+                </li>
+                <li class="flex flex-col mb-4">
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" id="phone" class="border-2 border-blue-500">
+                </li>
+                <li class="flex flex-col mb-4">
+                  <label for="message">Your Message:</label>
+                  <textarea type="tex" id="phone" rows="10" cols="50" placeholder="Tell us about your project or just chat with us!" class="border-2 p-2 border-blue-500 text-sm font-normal""></textarea>
+                </li>
+              </ol>
+              <button type="submit" class="px-3 border-2 border-blue-500 bg-blue-500 text-white rounded-full hover:bg-white hover:text-black transition-all duration-200">Submit</button>
+              <div id="submit-message" class="mt-4 text-sm">
+                <p id="message-ok" class="hidden text-green-500">Your message was submitted successfully. Thanks for reaching out!</p>
+                <p id="message-error" class="hidden text-red-400">There was an error submitting your message. Please try again shortly.</p>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
 

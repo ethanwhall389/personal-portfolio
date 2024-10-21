@@ -7,7 +7,11 @@ module.exports = {
     },
     extend: {
 
-      
+      fontSize: {
+        '3xl': '1.875rem', // This is the default size for text-3xl
+        '4xl': '2.5rem', // This is the default size for text-3xl
+        'base': '1.2rem',
+      },
 
       keyframes: {
         reversebounce: {
@@ -40,6 +44,7 @@ module.exports = {
       },
 
       animationDelay: {
+        2500: '2.5s',
         2900: '2.9s',
         3000: '3s',
       },

@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelector("#contact-form"),t=document.querySelector("#message-ok"),o=document.querySelector("#message-error");e.addEventListener("submit",(c=>{c.preventDefault();const l=new FormData(e);fetch("google.com",{method:"POST",body:l}).then((e=>{e.ok?t.style.display="block":o.style.display="block"})).catch((()=>{o.style.display="block"}))}))})();
