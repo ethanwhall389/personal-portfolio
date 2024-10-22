@@ -18,6 +18,7 @@ module.exports = {
       },
 
       keyframes: {
+        
         reversebounce: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-25%)' },
@@ -28,10 +29,14 @@ module.exports = {
           '100%': {width: '100%'},
         },
 
+        fadein: {
+          '0%': {opacity: '0'},
+          '100%': {opacity: '1'},
+        },
+
         riseup: {
           '0%': {opacity: '0', top: '30px'},
-          '50%': {opacity: '1', top: '0px'},
-          '100%': {opacity: '0', top: '30px'},
+          '100%': {opacity: '1', top: '0px'},
         },
 
         risedown: {
@@ -41,6 +46,7 @@ module.exports = {
       },
 
       animation: {
+        fadein: 'fadein 1s ease-in-out forwards',
         reversebounce: 'reversebounce 1s ease-in-out',
         underline: 'underline 1s ease-in-out forwards',
         riseup: 'riseup 1.2s cubic-bezier(.53,0,.5,.99) forwards',
@@ -48,6 +54,9 @@ module.exports = {
       },
 
       animationDelay: {
+        200: '0.2s',
+        500: '0.5s',
+        1000: '1s',
         2500: '2.5s',
         2900: '2.9s',
         3000: '3s',

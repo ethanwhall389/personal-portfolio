@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelectorAll("section"),t=new IntersectionObserver((e=>{e.forEach((e=>{e.isIntersecting&&(e.target.classList.add("animate-fadein"),t.unobserve(e.target))}))}),{threshold:.1});e.forEach((e=>{t.observe(e)}))}));
