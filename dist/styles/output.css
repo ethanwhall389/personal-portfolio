@@ -852,6 +852,14 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-br-xl {
   border-bottom-right-radius: 0.75rem;
 }
