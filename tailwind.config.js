@@ -7,6 +7,11 @@ module.exports = {
     },
     extend: {
 
+      colors: {
+        primary: '#fdcf46',
+        secondary: '#ff7b04',
+      },
+      
       spacing: {
         '128': '32rem',
       },
