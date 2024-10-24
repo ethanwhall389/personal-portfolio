@@ -915,6 +915,10 @@ video {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\.\/images\/bg-darker-blurred\.jpg\'\)\] {
+  background-image: url('../images/bg-darker-blurred.jpg');
+}
+
 .from-primary {
   --tw-gradient-from: #fdcf46 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(253 207 70 / 0) var(--tw-gradient-to-position);
