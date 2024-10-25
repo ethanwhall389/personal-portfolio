@@ -20,9 +20,9 @@
   <!-- <div id="cursor" class="hidden absolute w-4 h-4 bg-blue-400 z-50 pointer-events-none rounded-full"></div> -->
 
   <div
-    class="h-screen px-10 overflow-hidden overflow-y-scroll snap-y snap-mandatory scroll-smooth scroll-p-7 scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-black">
+    class="h-screen px-10 overflow-hidden overflow-y-scroll md:snap-y md:snap-mandatory scroll-smooth scroll-p-7 scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-black">
     <div class="max-w-screen-xl mx-auto relative">
-      <nav class="text-lg px-2 pt-5 pb-3 flex justify-center md:justify-between sticky top-0 z-0 md:z-10">
+      <nav class="hidden md:flex justify-center md:justify-between text-lg px-2 pt-5 pb-3 sticky top-0 z-0 md:z-10">
         <div class="collapse md:visible">
           <a href="#home">
             <div class="w-52 hover:scale-110 transition-all duration-200">
@@ -47,7 +47,7 @@
       </nav>
 
       <section id="home"
-        class="snap-always snap-start scroll-snap max-w-2xl mt-20 mx-auto min-h-screen flex flex-col justify-center items-center relative">
+        class="snap-always snap-start scroll-snap max-w-2xl mt-10 md:mt-20 mx-auto min-h-screen flex flex-col justify-center items-center relative">
         <div class="mb-20">
           <h3 class="animate-fadein opacity-0 text-center text-1xl text-white mb-8">Upstate South Carolina Web Design</h3>
           <h2 class="animate-fadein animate-delay-200 opacity-0 text-3xl md:text-5xl text-center font-bold leading-tight mb-8 bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent">Professional Website Design & Development</h2>
@@ -68,37 +68,47 @@
         <h2 class="text-center font-bold p-2 text-4xl pb-4 mb-16 bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent">Portfolio</h2>
         <!-- <div class="min-h-screen mx-auto flex flex-1 flex-col items-center justify-center"> -->
         <div class="mx-auto mb-44">
-          <div class="w-full flex flex-col lg:flex-row gap-36 md:gap-11">
+          <div class="w-full flex flex-col lg:flex-row gap-14 md:gap-11">
 
             <a href="https://sovereigndominion.co/" target="_blank" class="group">
-              <div class="md:relative backdrop-blur-sm bg-gradient-to-tr from-slate-800/30 to-slate-200/30 shadow-lg w-64 h-56 lg:w-100 lg:h-55 rounded-tl-xl rounded-br-xl p-2 md:hover:rotate-3 transition-all duration-200 flex flex-col justify-between">
-                <h3 class="absolute text-center">Sovereign Dominion Ecommerce</h3>
-                <div class="absolute w-11/12 h-full left-2.5 top-20">
-                  <img src="images/projects/sovereign-dominion.jpg" alt="Sovereign Dominion Ecommerce Demo" class="md:absolute opacity-100 mx-auto group-hover:opacity-0 transition-opacity" />
-                  <p class="mt-6 md:mt-0 static md:absolute md:opacity-0 group-hover:opacity-100 md:transition-opacity text-md">Full ecommerce site built for Greenville South Carolina apparel company Sovereign Dominion.</p>
+              <div class="static md:relative backdrop-blur-sm bg-gradient-to-tr from-slate-800/30 to-slate-200/30 shadow-lg w-full h-full md:w-64 md:h-56 lg:w-100 lg:h-55 rounded-tl-xl rounded-br-xl p-2 md:hover:rotate-3 transition-all duration-200 flex flex-col justify-between items-center gap-2">
+                <h3 class="md:absolute text-center">Sovereign Dominion Ecommerce</h3>
+                <div class="md:absolute w-11/12 h-full left-2.5 top-20 flex flex-col gap-2">
+                  <img src="images/projects/sovereign-dominion.jpg" alt="Sovereign Dominion Ecommerce Demo" class="md:absolute opacity-100 mx-auto md:group-hover:opacity-0 transition-opacity" />
+                  <p class="md:mt-0 static md:absolute md:opacity-0 group-hover:opacity-100 md:transition-opacity text-md">Full ecommerce site built for Greenville South Carolina apparel company Sovereign Dominion.</p>
                 </div>
               </div>
             </a>
             
             <a href="https://agingcauseandcure.com/" target="_blank" class="group">
-              <div class="md:relative backdrop-blur-sm bg-gradient-to-tr from-slate-800/30 to-slate-200/30 shadow-lg w-64 h-56 lg:w-100 lg:h-55 rounded-tl-xl rounded-br-xl p-2 hover:rotate-3 transition-all duration-200 flex flex-col justify-between">
-                <h3 class="absolute text-center w-full">Aging Cause and Cure</h3>
-                <div class="absolute w-11/12 h-full left-2.5 top-20">
-                  <img src="images/projects/aging-cause-and-cure.jpg" alt="Aging Cause and Cure Demo" class="md:absolute opacity-100 mx-auto group-hover:opacity-0 transition-opacity" />
-                  <p class="mt-6 md:mt-0 static md:absolute md:opacity-0 group-hover:opacity-100 md:transition-opacity text-md">A website built for the release of a scientific research book.</p>
+              <div class="static md:relative backdrop-blur-sm bg-gradient-to-tr from-slate-800/30 to-slate-200/30 shadow-lg w-full h-full md:w-64 md:h-56 lg:w-100 lg:h-55 rounded-tl-xl rounded-br-xl p-2 md:hover:rotate-3 transition-all duration-200 flex flex-col justify-between items-center gap-2">
+                <h3 class="md:absolute text-center w-full">Aging Cause and Cure</h3>
+                <div class="md:absolute w-11/12 h-full left-2.5 top-20 flex flex-col gap-2">
+                  <img src="images/projects/aging-cause-and-cure.jpg" alt="Aging Cause and Cure Demo" class="md:absolute opacity-100 mx-auto md:group-hover:opacity-0 transition-opacity" />
+                  <p class="md:mt-0 static md:absolute md:opacity-0 group-hover:opacity-100 md:transition-opacity text-md">A website built for the release of a scientific research book.</p>
                 </div>
               </div>
             </a>
             
             <a href="https://draardsmasvitamins.com/" target="_blank" class="group">
-              <div class="md:relative backdrop-blur-sm bg-gradient-to-tr from-slate-800/30 to-slate-200/30 shadow-lg w-64 h-56 lg:w-100 lg:h-55 rounded-tl-xl rounded-br-xl p-2 hover:rotate-3 transition-all duration-200 flex flex-col justify-between">
-                <h3 class="absolute text-center w-full">Dr. Aardsma's Vitamins</h3>
-                <div class="absolute w-11/12 h-full left-2.5 top-20">
-                  <img src="images/projects/dr-aardsmas-vitamins.jpg" alt="Dr. Aardsma's Vitamins Demo" class="md:absolute opacity-100 mx-auto group-hover:opacity-0 transition-opacity" />
-                  <p class="mt-6 md:mt-0 static md:absolute md:opacity-0 group-hover:opacity-100 md:transition-opacity text-md">A product website built as an appealing alternative sales site to the more stark research site.</p>
+              <div class="static md:relative backdrop-blur-sm bg-gradient-to-tr from-slate-800/30 to-slate-200/30 shadow-lg w-full h-full md:w-64 md:h-56 lg:w-100 lg:h-55 rounded-tl-xl rounded-br-xl p-2 md:hover:rotate-3 transition-all duration-200 flex flex-col justify-between items-center gap-2">
+                <h3 class="md:absolute text-center w-full">Dr. Aardsma's Vitamins</h3>
+                <div class="md:absolute w-11/12 h-full left-2.5 top-20 flex flex-col gap-2">
+                  <img src="images/projects/dr-aardsmas-vitamins.jpg" alt="Dr. Aardsma's Vitamins Demo" class="md:absolute opacity-100 mx-auto md:group-hover:opacity-0 transition-opacity" />
+                  <p class="md:mt-0 static md:absolute md:opacity-0 group-hover:opacity-100 md:transition-opacity text-md">A product website built as an appealing alternative sales site to the more stark research site.</p>
                 </div>
               </div>
             </a>
+
+            <!-- <a href="https://draardsmasvitamins.com/" target="_blank" class="group">
+              <div class="md:relative backdrop-blur-sm bg-gradient-to-tr from-slate-800/30 to-slate-200/30 shadow-lg w-64 h-56 lg:w-100 lg:h-55 rounded-tl-xl rounded-br-xl p-2 md:hover:rotate-3 transition-all duration-200 flex flex-col justify-between">
+                <h3 class="absolute text-center w-full">Dr. Aardsma's Vitamins</h3>
+                <div class="absolute w-11/12 h-full left-2.5 top-20">
+                  <img src="images/projects/dr-aardsmas-vitamins.jpg" alt="Dr. Aardsma's Vitamins Demo" class="md:absolute opacity-100 mx-auto md:group-hover:opacity-0 transition-opacity" />
+                  <p class="mt-6 md:mt-0 static md:absolute md:opacity-0 group-hover:opacity-100 md:transition-opacity text-md">A product website built as an appealing alternative sales site to the more stark research site.</p>
+                </div>
+              </div>
+            </a> -->
 
 
           </div>
@@ -106,9 +116,9 @@
       </section>
 
       <section id="about"
-      class="opacity-0 mx-auto snap-always snap-start min-h-screen max-w-5xl flex flex-col items-center justify-center pt-24">
+      class="opacity-0 mx-auto snap-always snap-start min-h-screen max-w-5xl flex flex-col items-center justify-center md:pt-24">
       <div class="flex flex-col items-center justify-center mb-20 md:mb-44">
-        <div class="peer/headshot group mt-16 md:mt-0 my-3 flex flex-col items-center w-[100%]">
+        <div class="peer/headshot group md:mt-16 md:mt-0 my-3 flex flex-col items-center w-[100%]">
           <img src="./images/headshot-bw.jpg" id="profile-photo" alt="Ethan Hall headshot"
             class="opacity-100 max-w-36 rounded-full transition-all duration-500 mb-6" />
           <div class="text-2xl text-center font-bold py-2 mb-6 md:flex md:gap-2">

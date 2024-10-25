@@ -793,14 +793,6 @@ video {
   animation: reversebounce 1s ease-in-out;
 }
 
-.snap-y {
-  scroll-snap-type: y var(--tw-scroll-snap-strictness);
-}
-
-.snap-mandatory {
-  --tw-scroll-snap-strictness: mandatory;
-}
-
 .snap-start {
   scroll-snap-align: start;
 }
@@ -847,6 +839,18 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .overflow-hidden {
@@ -904,10 +908,6 @@ video {
   background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
 
-.bg-opacity-10 {
-  --tw-bg-opacity: 0.1;
-}
-
 .bg-\[url\(\'\.\.\/images\/bg-darker-blurred\.jpg\'\)\] {
   background-image: url('../images/bg-darker-blurred.jpg');
 }
@@ -918,14 +918,6 @@ video {
 
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\.\.\/\/images\/bg-darker-blurred\.jpg\'\)\] {
-  background-image: url('..//images/bg-darker-blurred.jpg');
-}
-
-.bg-\[url\(\'\.\.\/imagess\/bg-darker-blurred\.jpg\'\)\] {
-  background-image: url('../imagess/bg-darker-blurred.jpg');
 }
 
 .from-primary {
@@ -1288,8 +1280,36 @@ video {
     margin-top: 0px;
   }
 
+  .md\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .md\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:h-56 {
+    height: 14rem;
+  }
+
+  .md\:w-64 {
+    width: 16rem;
+  }
+
+  .md\:snap-y {
+    scroll-snap-type: y var(--tw-scroll-snap-strictness);
+  }
+
+  .md\:snap-mandatory {
+    --tw-scroll-snap-strictness: mandatory;
   }
 
   .md\:justify-between {
@@ -1302,6 +1322,10 @@ video {
 
   .md\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .md\:pt-24 {
+    padding-top: 6rem;
   }
 
   .md\:text-5xl {
@@ -1317,6 +1341,10 @@ video {
     transition-property: opacity;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
+  }
+
+  .group:hover .md\:group-hover\:opacity-0 {
+    opacity: 0;
   }
 
   .md\:hover\:rotate-3:hover {
